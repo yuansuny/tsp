@@ -5,7 +5,7 @@ Install & compile:
 ------------------
 packages required: 1) cmake-2.8.4 or above; 2) gcc-7.3.0 or above; and cplex/12.8.0
 install: 'git clone https://github.com/yuansuny/tsp.git'
-compile: 1) move to the directory: 'cd mwc'
+compile: 1) move to the directory: 'cd tsp'
 	 2) create a build directory: 'mkdir build'
          3) move to the build directory: 'cd build'
          4) run cmake: 'cmake -DCPLEX_ROOT_DIR=</path/to/ilog> ..'. The path to your CPLEX installation must be such that '</path/to/ilog>/cplex/include/ilcplex/cplex.h' exists.
