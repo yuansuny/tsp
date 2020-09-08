@@ -1,0 +1,32 @@
+This repository contains the C++ source codes of the machine learning model for problem reduction to solve the traveling salesman problems.
+
+------------------
+Install & compile:
+------------------
+packages required: 1) cmake-2.8.4 or above; 2) gcc-7.3.0 or above; and cplex/12.8.0
+install: 'git clone https://github.com/yuansuny/tsp.git'
+compile: 1) move to the directory: 'cd mwc'
+	 2) create a build directory: 'mkdir build'
+         3) move to the build directory: 'cd build'
+         4) run cmake: 'cmake -DCPLEX_ROOT_DIR=</path/to/ilog> ..'. The path to your CPLEX installation must be such that '</path/to/ilog>/cplex/include/ilcplex/cplex.h' exists.
+         5) run makefile: 'make'
+
+------
+Usage:
+------
+Usage: ./TSP datafile_ID (specified in the main.cpp file line 32.)
+ 
+
+-----------
+References:
+-----------
+Sun Y, Ernst A, Li X, and Weiner, J. Generalization of Machine Learning for Problem Reduction: A Case Study on Travelling Salesman Problems. OR Spectrum, accepted in August 2020. (https://rdcu.be/b6ECv) 
+
+--------
+License:
+--------
+This program is to be used under the terms of the GNU General Public License 
+(http://www.gnu.org/copyleft/gpl.html).
+Author: Yuan Sun, Andreas Ernst, Xiaodong Li, & Jake Weiner.
+e-mail: yuan.sun@rmit.edu.au, andreas.ernst@monash.edu, xiaodong.li@rmit.edu.au, and jake.weiner@rmit.edu.au.
+Copyright notice: (c) 2020 Yuan Sun, Andreas Ernst, Xiaodong Li, and Jake Weiner.
